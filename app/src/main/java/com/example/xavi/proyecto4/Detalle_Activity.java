@@ -16,6 +16,7 @@ public class Detalle_Activity extends AppCompatActivity {
     private TextView text_precio;
     private String res = "";
     private String res2 = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +36,7 @@ public class Detalle_Activity extends AppCompatActivity {
             for (String ruta : rutaCosto) {
                 res += ruta + " - ";
             }
-            if (Nodos.getInstancia().getTiempo() == 0){
+            if (Nodos.getInstancia().getTiempo() == 0) {
                 text_tiempo.setText("");
             }
             text_ruta.setText(res.substring(0, res.length() - 2));
@@ -50,12 +51,11 @@ public class Detalle_Activity extends AppCompatActivity {
             for (String ruta : rutaTiempo) {
                 res2 += ruta + " - ";
             }
-            if (Nodos.getInstancia().getPrecio() == 0){
+            if (Nodos.getInstancia().getPrecio() == 0) {
                 text_precio.setText("");
             }
             text_ruta2.setText(res2.substring(0, res2.length() - 2));
-        }else
-        {
+        } else {
             text_ruta2.setText("tiempo no disponible");
             text_precio.setText("");
         }

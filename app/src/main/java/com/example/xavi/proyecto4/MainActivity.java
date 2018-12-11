@@ -58,13 +58,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         nodosWebs.Tiempo();
                         Intent inten = new Intent(MainActivity.this, Detalle_Activity.class);
                         startActivity(inten);
-                    }else
-                    {
+                    } else {
                         Toast.makeText(MainActivity.this, "Error: El destino tiene que ser diferente al origen", Toast.LENGTH_SHORT).show();
                     }
-
                 } else {
-                    Toast.makeText(MainActivity.this, "Error", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Error: datos vacios", Toast.LENGTH_SHORT).show();
                 }
                 break;
             case R.id.btn_actualizar:

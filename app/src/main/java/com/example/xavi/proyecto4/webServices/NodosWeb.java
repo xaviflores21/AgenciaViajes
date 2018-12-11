@@ -15,7 +15,7 @@ import java.util.Hashtable;
 
 public class NodosWeb {
 
-    private String url = "http://192.168.1.6:8080/Proyecto4/admin/adminController";
+    private String url = "http://192.168.2.20:8080/Proyecto4/admin/adminController";
 
     public ArrayList<String> nodos() {
         Hashtable<String, String> params = new Hashtable<>();
